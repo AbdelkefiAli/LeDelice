@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #000;
+}
+
+.site-title-moved, footer h2 {
+    font-family: 'Ms Madi', cursive;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+main section {
+    padding: 80px 5%;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+main section h2 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+
+.hero-intro {
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 5%; 
+    color: #333;
+}
+
+.site-title-moved {
+    font-size: 5rem;
+    color: #000;
+    margin-bottom: 0.5rem;
+}
+
+.main-pitch {
+    font-weight: 400;
+    margin-bottom: 20px; 
+    margin-top: 0; 
+    padding-top: 0;
+}
+
+.hero-intro img {
+    max-width: 900px;
+    width: 80%;
+    height: auto;
+    border-radius: 8px; 
+    box-shadow: none;
+    object-fit: contain; 
+}
+
+.story-combined {
+    background-color: #fff; 
+    border: none;
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: center;
+    gap: 60px; 
+    padding: 60px 5%;
+}
+
+.story-text-wrapper {
+    max-width: 500px; 
+    text-align: left;
+    flex: 1 1 450px; 
+}
+
+.story-combined h2 {
+    font-size: 4rem; 
+    text-align: left; 
+    margin-bottom: 30px; 
+}
+
+.story-combined p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+}
+
+.story-image-wrapper {
+    flex: 1 1 500px; 
+    max-width: 550px;
+}
+
+.story-image-wrapper img {
+    width: 100%;
+    height: auto;
+    max-height: 500px; 
+    object-fit: cover;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* === MENU SECTIONS (Appetizers, Mains, Sides, Desserts) === */
+.menu-section { 
+    background-color: #fff;
+    padding-top: 50px;
+}
+
+.menu-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.menu-item {
+    width: 300px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: none;
+}
+
+.menu-item img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px; 
+    margin-bottom: 25px;
+    border: none;
+}
+
+.menu-item h3 {
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+}
+
+.menu-item p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* === FOOTER === */
+footer {
+    background-color: #eaeaea;
+    color: #333;
+    padding: 50px 5% 20px;
+}
+
+footer > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto 30px;
+    text-align: left;
+}
+
+footer h2 {
+    font-size: 4rem;
+    margin: 0;
+    flex-shrink: 0;
+    padding-right: 50px;
+}
+
+footer h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+footer address {
+    font-style: normal;
+    text-align: right;
+}
+
+footer address p {
+    margin: 5px 0;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+footer > p {
+    font-size: 0.8rem;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
+}
+
+footer button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    margin-left: 10px;
+}
+
+/* === Media Queries === */
+@media (max-width: 768px) {
+    
+    .site-title-moved {
+        font-size: 3.5rem;
+    }
+    .main-pitch {
+        font-size: 2rem;
+    }
+    
+    main section h2 {
+        font-size: 2.5rem;
+    }
+
+    .story-combined {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .story-text-wrapper, .story-image-wrapper {
+        max-width: 100%;
+        flex: auto;
+    }
+    
+    .story-combined h2 {
+        text-align: center;
+        font-size: 3rem; 
+        margin-bottom: 20px;
+    }
+    .story-text-wrapper {
+        order: 2; 
+        text-align: left;
+        padding: 0 20px; 
+    }
+    .story-image-wrapper {
+        order: 1;
+        margin-bottom: 0;
+    }
+
+    .hero-intro img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Menu item adjustments (now using class names) */
+    .menu-item {
+        width: 100%;
+        max-width: 350px;
+    }
+    .menu-item img {
+        width: 250px;
+        height: 250px;
+    }
+
+    footer > div {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    footer h2 {
+        padding-right: 0;
+    }
+
+    footer address, footer h3 {
+        text-align: center;
+    }
+}

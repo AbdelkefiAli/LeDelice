@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>Le Délice</title>
+    <meta name="description" content="A throw away vibe-coded site for an assignment">
+    <meta name="author" content="Ali Abdelkefi">
+    
+    
+    <link rel="icon" type="image/png" href="./Images/logo.png">
+    
+    
+    <meta property="og:title" content="Le Délice">
+    <meta property="og:description" content="A throw away vibe-coded site for an assignment">
+    
+    
+    
+    <meta name="image" property="og:image" content="https://ledelice.pages.dev/Images/logo.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    
+    <div id="loading-screen">
+        <div class="loader-text">Le Délice</div>
+    </div>
+    
+
+    <nav class="navbar">
+        <a href="#part1" class="logo">Le Délice</a>
+    </nav>
+
+    <main>
+        <section id="part1" class="fullscreen-section">
+            <video autoplay loop muted playsinline class="background-video">
+                <source src="./Videos/welcomevideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="content">
+                <h1>Where every dish tells a French story</h1>
+                <a href="#part4" class="cta-button">View Menu</a>
+            </div>
+        </section>
+
+        
+        <div id="part2-anchor"></div>
+        <section id="part2" class="fullscreen-section">
+            <div class="content fade-in-element">
+                <h1>Experience French charm<br>Delight your palate, inspire your soul</h1>
+            </div>
+            
+            <div class="slider-viewport fade-in-element">
+                <div class="dish-slider-track">
+                    
+                    <div class="dish-slide"><img src="./Images/dish1.png" alt="A beautifully presented dish from Le Délice" loading="lazy"></div>
+                    <div class="dish-slide"><img src="./Images/dish2.png" alt="A second stunning dish from Le Délice" loading="lazy"></div>
+                    <div class="dish-slide"><img src="./Images/dish3.png" alt="A third exquisite dish from Le Délice" loading="lazy"></div>
+                    <div class="dish-slide"><img src="./Images/dish4.png" alt="A fourth masterful dish from Le Délice" loading="lazy"></div>
+                    <div class="dish-slide"><img src="./Images/dish5.png" alt="A fifth delectable dish from Le Délice" loading="lazy"></div>
+                    <div class="dish-slide"><img src="./Images/dish1.png" alt="A beautifully presented dish from Le Délice" loading="lazy"></div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="part3" class="fullscreen-section">
+            <div class="story-background"></div>
+            <div class="content-wrapper fade-in-element"> 
+                <div class="story-text-container">
+                    <h1 class="menu-title">Our Story</h1> 
+                    <p class="story-description">
+                        "Le Délice" is a charming French bistro on a cobblestone street, transporting you to Paris. Inside, gas lamps illuminate a cozy space with vintage posters and red velvet. The air carries the aroma of Coq au Vin and Tarte Tatin, accompanied by gentle conversation. It's a place where every meal is a special occasion, delivered with effortless French elegance.
+                    </p>
+                    <p class="story-signature">— Chef Antoine Dubois</p>
+                </div>
+                <div class="story-image-container">
+                    <img src="./Images/dishes.png" alt="A collection of exquisite dishes from Le Délice" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="part4" class="fullscreen-section menu-section">
+            <div class="content fade-in-element">
+                <h1 class="menu-title">Appetizers</h1>
+                <div class="menu-image-gallery">
+                    <div class="menu-item-wrapper">
+                        <div class="menu-image-item"><img src="./MenuImages/SaladedeChèvreChaud.png" alt="Salade de Chèvre Chaud" loading="lazy"></div>
+                        <div class="menu-item-details">
+                            <h3>Salade de Chèvre Chaud - €13</h3>
+                            <p>Warm goat cheese salad with toasted croutons, mixed greens, walnuts, and a light honey-mustard vinaigrette.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-wrapper">
+                        <div class="menu-image-item"><img src="./MenuImages/SoupeOignonGratinée.png" alt="Soupe à l'Oignon Gratinée" loading="lazy"></div>
+                        <div class="menu-item-details">
+                            <h3>Soupe à l'Oignon Gratinée - €12</h3>
+                            <p>Traditional French onion soup, slow-simmered with caramelized onions, rich beef broth, topped with a rustic crouton and melted Gruyère cheese.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-wrapper">
+                        <div class="menu-image-item"><img src="./MenuImages/TerrinedeCampagneavecConfitOignons.png" alt="Terrine de Campagne" loading="lazy"></div>
+                        <div class="menu-item-details">
+                            <h3>Terrine de Campagne - €14</h3>
+                            <p>Rustic country pâté with pistachios, served with toasted baguette and sweet caramelized onion jam.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="part5" class="fullscreen-section menu-section">
+            <div class="content fade-in-element">
+                <h1 class="menu-title">Main Courses</h1>
+                <div class="menu-image-gallery">
+                    <div class="menu-item-wrapper">
+                        <div class="menu-image-item"><img src="./MenuImages/CoqauVin.png" alt="Coq au Vin" loading="lazy"></div>
+                        <div class="menu-item-details">
+                            <h3>Coq au Vin - €26</h3>
+                            <p>Classic chicken braised in red wine with bacon lardons, mushrooms, and pearl onions, served with potato purée.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-wrapper">
+                        <div class="menu-image-item"><img src="./MenuImages/Pan-SearedScallops.png" alt="Pan-Seared Scallops" loading="lazy"></div>
+                        <div class="menu-item-details">
+                            <h3>Pan-Seared Scallops - €32</h3>
+                            <p>Perfectly seared sea scallops, served with a delicate lemon-butter sauce, asparagus, and saffron risotto.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-wrapper">
+                        <div class="menu-image-item"><img src="./MenuImages/CanardOrange.png" alt="Canard à l'Orange" loading="lazy"></div>
+                        <div class="menu-item-details">
+                            <h3>Canard à l'Orange - €28</h3>
+                            <p>Crispy roasted duck breast with a tangy orange reduction, served alongside potato gratin and seasonal greens.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section id="part6" class="fullscreen-section menu-section">
+            <div class="content fade-in-element">
+                <h1 class="menu-title">Sides</h1>
+                <div class="menu-image-gallery">
+                    <div class="menu-item-wrapper">
+                        <div class="menu-image-item"><img src="./MenuImages/GratinDauphinois.png" alt="Gratin Dauphinois" loading="lazy"></div>
+                        <div class="menu-item-details">
+                            <h3>Gratin Dauphinois - €7</h3>
+                            <p>Creamy sliced potatoes baked with garlic and Gruyère cheese.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-wrapper">
+                        <div class="menu-image-item"><img src="./MenuImages/HaricotsVertsAmandine.png" alt="Haricots Verts Amandine" loading="lazy"></div>
+                        <div class="menu-item-details">
+                            <h3>Haricots Verts Amandine - €6</h3>
+                            <p>Green beans lightly sautéed with toasted almonds and butter.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-wrapper">
+                        <div class="menu-image-item"><img src="./MenuImages/PommesFritesMaison.png" alt="Pommes Frites Maison" loading="lazy"></div>
+                        <div class="menu-item-details">
+                            <h3>Pommes Frites Maison - €6</h3>
+                            <p>Crispy homemade French fries, lightly salted.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="part7" class="fullscreen-section menu-section">
+            <div class="content fade-in-element">
+                <h1 class="menu-title">Desserts</h1>
+                <div class="menu-image-gallery">
+                    <div class="menu-item-wrapper">
+                        <div class="menu-image-item"><img src="./MenuImages/ClassicCremeBrulee.png" alt="Classic Crème Brûlée" loading="lazy"></div>
+                        <div class="menu-item-details">
+                            <h3>Classic Crème Brûlée - €9</h3>
+                            <p>Rich custard base topped with a contrasting layer of hardened caramelized sugar.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-wrapper">
+                        <div class="menu-image-item"><img src="./MenuImages/MousseauChocolat.png" alt="Mousse au Chocolat" loading="lazy"></div>
+                        <div class="menu-item-details">
+                            <h3>Mousse au Chocolat - €10</h3>
+                            <p>Velvety smooth dark chocolate mousse, light and intensely flavorful, garnished with fresh berries.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-wrapper">
+                        <div class="menu-image-item"><img src="./MenuImages/TarteTatinauxPommes.png" alt="Tarte Tatin aux Pommes" loading="lazy"></div>
+                        <div class="menu-item-details">
+                            <h3>Tarte Tatin aux Pommes - €11</h3>
+                            <p>Traditional caramelized apple tart, served warm with a scoop of vanilla bean ice cream.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section id="part8" class="fullscreen-section footer-section">
+            <div class="content">
+                
+                <h1 class="footer-logo">Le Délice</h1>
+                
+                <div class="footer-contact">
+                    <h2>Contact Us</h2>
+                    <div class="contact-details">
+                        <p>123 Rue de la Joie, Paris, France</p>
+                        <p>+33 1 23 45 67 89</p>
+                        <p>YouAreWelcome@ledelice.com</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="footer-bottom-bar">
+                <p class="copyright underlined">2025 Le Délice. No rights reserved, free for all.</p>
+                <a href="./simpler.html" class="simpler-button" target="_blank">Simpler</a>
+            </div>
+        </section>
+    </main>
+    <script>
+        
+        window.onload = function() {
+            window.scrollTo(0, 0);
+        };
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            const loadingScreen = document.getElementById('loading-screen');            
+            setTimeout(() => {
+                if (loadingScreen) {
+                    loadingScreen.classList.add('hidden');
+                }
+            }, 1500); 
+
+            const fadeElements = document.querySelectorAll('.fade-in-element');
+            const fadeOptions = { root: null, rootMargin: '0px', threshold: 0.1 };
+            const fadeObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                    }
+                });
+            }, fadeOptions);
+            fadeElements.forEach(element => { fadeObserver.observe(element); });
+            
+            const sliderTrack = document.querySelector('.dish-slider-track');
+            function handleVisibilityChange() {
+                if (!sliderTrack) return; 
+                if (document.hidden) {
+                    sliderTrack.style.animationPlayState = 'paused';
+                } else {
+                    sliderTrack.style.animationPlayState = 'running';
+                }
+            }
+
+            document.addEventListener('visibilitychange', handleVisibilityChange);
+            const navbar = document.querySelector('.navbar');
+            const calculateThreshold = () => window.innerHeight - 50; 
+            function updateNavbarColor() {
+                const scrollThreshold = calculateThreshold();
+                if (window.scrollY > scrollThreshold) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            }
+
+            updateNavbarColor();
+
+            window.addEventListener('scroll', updateNavbarColor);
+            window.addEventListener('resize', updateNavbarColor);
+        });
+    </script>
+</body>
+</html>
